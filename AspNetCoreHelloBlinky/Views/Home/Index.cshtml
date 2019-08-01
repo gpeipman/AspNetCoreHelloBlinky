@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Hello, blinky!</h1>
+    <p>
+        Learn about
+        <a href="https://gunnarpeipman.com/aspnet/aspnet-core-hello-blinky">
+            how to blink LED with ASP.NET Core
+        </a>.
+    </p>
+    <p>Led is <strong>@ViewBag.BlinkState</strong></p>
+    <p>
+        <a asp-action="StartBlinking">Start blinking</a> | <a asp-action="StopBlinking">Stop blinking</a>
+    </p>
+</div>
